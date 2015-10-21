@@ -1,0 +1,31 @@
+boxes:
+  centos/7: "centos/7"
+nodes:
+  rhce1:
+    hostname: rhce1.vagrant.vm
+    box: centos/7
+    memory: 1024
+    cpus: 1
+    networks:
+      - private_network:
+          ip: 192.168.137.10
+      - private_network:
+          ip: 192.168.66.10
+          virtualbox__intnet: true
+      - private_network:
+          ip: 192.168.66.11
+          virtualbox__intnet: true
+  rhce2:
+    hostname: rhce2.vagrant.vm
+    box: centos/7
+    memory: 1024
+    cpus: 1
+    networks:
+      - private_network:
+          ip: 192.168.137.20
+      - private_network:
+          ip: 192.168.66.20
+          virtualbox__intnet: true
+      - private_network:
+          ip: 192.168.66.21
+          virtualbox__intnet: true
