@@ -15,7 +15,9 @@ The Vagrant dropin file comes from https://github.com/terrimonster
 
 ### vagrant.yml
 
-Gives instructions to Vagrantfile regarding what Vagrant box you want to use, and what virtual machines are available for provisioning, and what their options should be. By default I'm using centos 6.6, but if you want to use another box, you'd change that here.
+Gives instructions to Vagrantfile regarding what Vagrant box you want to use, and what virtual machines are available for provisioning, and what their options should be. 
+
+For the RHCE exam we use the latest centos 7 ('centos/7')
 
 ## VM config
 
